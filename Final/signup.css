@@ -1,0 +1,124 @@
+@media (max-width:779px){
+    .container {
+    width : 100vw;
+    height: 100vh;
+    }  
+}
+
+.main{
+    width: 100%; 
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    background-position: center;
+    background-size: cover;
+    height: 105vh;
+    
+ } 
+ .form{
+    width: 20rem;
+    height: 28rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
+    position: absolute;
+    top: 6rem;
+    right: 30rem;
+    border-radius: 1rem;
+    padding: 30px;
+    /* margin-right: 60%; */
+    justify-content: center;
+    align-items: center;
+}
+.form .login-signup{
+
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  /* form{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width:300px ;
+    padding: 0 10px;
+
+} */
+
+h2{
+font-size: 40px;
+color: slateblue;
+margin-top: 1rem;
+text-align: center;
+}
+
+.login-link{
+    font-size: 1.5rem;
+    /* color: slateblue; */
+}
+
+.form .input-field{
+width: 18rem;
+height: 40px;
+background: #f0f0f0;
+margin: 9px 0;
+border: 2px solid slateblue;
+border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.input-field i{
+    flex: 1;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+
+}
+
+.input-field input{
+    flex: 5;
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+
+}
+
+.signup-btn{
+    width: 10rem;
+    height:2.5rem ;
+    border: none;
+    border-radius: 50px ;
+    outline: #520052;
+    color: #fff;
+    background:slateblue;
+    font-weight:600 ;
+    margin: 10px 0;
+    margin-left: 4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.signup-btn:hover{
+    background: #c03cc0;
+}
+
+a{
+    text-decoration: none;
+}
+.register{
+    font-size: 1.2rem;
+    color: white;
+}

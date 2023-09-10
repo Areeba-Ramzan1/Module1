@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attendence.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Attendance Portal</h1>
+    </header>
+    <div id="main-content">
+        <h2>Admin Panel</h2><br>
+        <!-- Form to Add Class Details -->
+        <form id="class-form">
+            
+            <label for="class-course" class="form" id="class-course">Class Course:</label>
+            <select id="courseName">
+                <option value="Development">Web Development</option>
+                <option value="Graphics">Graphics</option>
+                <option value="Flutter">Flutter</option>
+            </select>
+            <!-- <input type="text" class="form" id="class-course" required> -->
+
+            <label for="class-time" class="form"id="class-time">Class Time:</label>
+            <select id="classTimings">
+            <option value="9:00 AM">9:00 AM</option>
+            <option value="10:30 AM">10:30 AM</option>
+            <option value="1:00 PM">1:00 PM</option>
+        </select>
+            <!-- <input type="text" class="form"id="class-time" required> -->
+
+            <label for="class-schedule" class="form"id="class-schedule">Class Schedule:</label>
+            <select id="schedule">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+            </select>
+            <!-- <input type="text" class="form"id="class-schedule" required> -->
+
+            <label for="class-teacher" class="form" id="class-teacher">Class Teacher:</label>
+            <select id="teacherName">
+                <option value="Miss H">Miss Hina</option>
+                <option value="Miss T">Miss Tayyaba</option>
+                <option value="Miss Q">Miss Qurratulain</option>
+            </select>
+            <!-- <input type="text" class="form" id="class-teacher" required> -->
+
+            <label for="class-section" class="form" id="class-section">Class Section:</label>
+            <select id="sectionName">
+                <option value="Sec A">Section A</option>
+                <option value="Sec B">Section B</option>
+                <option value="Sec C">Section C</option>
+            </select>
+            
+            <!-- <input type="text"class="form" id="class-section" required> -->
+
+            <label for="class-batch" class="form" id="class-batch">Class Batch:</label>
+            <select id="batchNumber">
+                <option value="Batch 07">Batch 07</option>
+                <option value="Batch 08">Batch 08</option>
+                <option value="Batch 09">Batch 09</option>
+            </select>
+            <!-- <input type="text"class="form" id="class-batch" required> -->
+
+
+
+
+
+            <!-- Add more input fields as needed -->
+            <button type="submit">Add Class</button>
+        </form>
+
+        <!-- Form to Add Student Details -->
+        <form id="student-form">
+            <h3>Add Student Details:</h3>
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" required>
+            <label for="student-roll">Roll Number:</label>
+            <input type="text" id="student-roll" required>
+            <!-- Add more input fields as needed -->
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Form to Mark Attendance -->
+        <form id="attendance-form">
+            <h3>Mark Attendance:</h3>
+            <label for="class-dropdown">Select Class:</label>
+            <select id="class-dropdown">
+                <option value="Miss H">Miss Hina</option>
+                <option value="Miss T">Miss Tayyaba</option>
+                <option value="Miss Q">Miss Qurratulain</option>
+                <option value="Sir G ">Sir Ghous</option>
+                <option value="Sir K">Sir Kashif</option>
+                <option value="Sir S">Sir Saad</option>
+            </select>
+                
+            
+            <label for="roll-number">Enter Roll Number:</label>
+            <input type="text" id="roll-number" required>
+            <label for="attendance-status">Select Status:</label>
+            <select id="attendance-status">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Late">Late</option>
+                <option value="Leave">Leave</option>
+            </select>
+            <button type="submit">Submit Attendance</button>
+        </form>
+
+        <!-- Display Student Statistics -->
+        <h3>Student Statistics:</h3>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Roll Number</th>
+                    <th>Attendance Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populate this table with student data -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
